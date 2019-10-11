@@ -38,7 +38,7 @@ const FormField = ({ formdata, id, change }) => {
                 )
                 break;
             case ('select'):
-                formTemplate= (
+                formTemplate = (
                     <div>
                         {formdata.showlabel ?
                             <div className="label_inputs">
@@ -63,6 +63,7 @@ const FormField = ({ formdata, id, change }) => {
                     </div>
                 )
                 break;
+
             default:
                 formTemplate = null;
 
