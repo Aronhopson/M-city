@@ -2,13 +2,14 @@ import firebase from 'firebase/app'
 import 'firebase/app'
 import 'firebase/database'
 import 'firebase/auth'
+import 'firebase/storage'
 
 const firebaseConfig = {
     apiKey: "AIzaSyBTyULq6zcWflGi9FNvIpt1tP8Yr-3O6KM",
     authDomain: "barca-ecc1b.firebaseapp.com",
     databaseURL: "https://barca-ecc1b.firebaseio.com",
     projectId: "barca-ecc1b",
-    storageBucket: "",
+    storageBucket: "barca-ecc1b.appspot.com",
     messagingSenderId: "754374892682",
     appId: "1:754374892682:web:ae2273528c13698b482173"
 };

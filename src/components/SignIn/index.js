@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {firebase } from '../../firebase'
+import { firebase } from '../../firebase'
 
 import FormField from '../UI/formField'
 import { validate } from '../UI/misc'
@@ -42,6 +42,8 @@ class SingIn extends Component {
         }
 
     }
+
+
     updateForm(element){
         const newFormdata = {...this.state.formdata}
         const newElement = { ...newFormdata[element.id]}
@@ -101,9 +103,9 @@ class SingIn extends Component {
             <div className="container">
                 <div className="signin_wrapper" style={{margin:'100px'}}>
 
-                <form onSubmit={(event) => this.SubmitForm(event)}>
+                <form onSubmit={(event) => this.submitForm(event)}>
                     <h2>Please Login</h2>
-                    <FormField
+                        <FormField
                             id={'email'}
                             formdata={this.state.formdata.email}
                             change={(element)=> this.updateForm(element)}
