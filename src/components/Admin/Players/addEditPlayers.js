@@ -124,11 +124,14 @@ class AddEditPlayer extends Component {
 
     }
 
+    //update form it grabds an element
     updateForm(element, content = '') {
         const newFormdata = { ...this.state.formdata }
+        //excess the elment through the id
         const newElement = { ...newFormdata[element.id] }
 
         if (content === '') {
+            //adds  the target value
             newElement.value = element.event.target.value;
         } else {
             newElement.value = content
@@ -160,36 +163,6 @@ class AddEditPlayer extends Component {
             formType,
             formdata: newFormdata
         })
-    }
-
-    componentDidMount(){
-        const playerId = this.props.match.params.id;
-
-        if(!playerId){
-     
-            this.setState({
-                formType:'Add player'
-            })
-        } else {
-
-           
-           firebaseDB.ref(`players/${playerId}`).once('value')
-           .then(snapshot => {
-               const playerData = snapshot.val();
-
-                firebase.storage().ref('players')
-                .child(playerData.image).getDownloadURL()
-                .then( url => {
-                    this.updateFields(playerData,playerId,'Edit player',url)
-                }).catch( e => {
-                    this.updateFields({
-                        ...playerData,
-                        image:''
-                    },playerId,'Edit player','')
-                })
-           })
-        }
-
     }
 
     successForm = (message) => {

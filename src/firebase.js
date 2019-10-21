@@ -11,7 +11,8 @@ const firebaseConfig = {
     projectId: "barca-ecc1b",
     storageBucket: "barca-ecc1b.appspot.com",
     messagingSenderId: "754374892682",
-    appId: "1:754374892682:web:ae2273528c13698b482173"
+    appId: "1:754374892682:web:ae2273528c13698b482173",
+   
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

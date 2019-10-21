@@ -14,7 +14,7 @@ a {
 }
 
 .bck_blue {
-    background: #7a8516;
+    background: #0d1831;
 }
 
 .bck_lblue {
@@ -179,15 +179,15 @@ footer .footer_discl {
 
 
 .featured_stripes .stripe {
-    width: 210px;
+    width: 230px;
     height: 1200px;
     position: absolute;
 }
 
 .featured_number {
-    font-size: 150px;
+    font-size: 270px;
     color: #ffffff;
-    transform: translate(270px,220px);
+    transform: translate(260px,170px);
     position: absolute;
 }
 
@@ -202,16 +202,16 @@ footer .footer_discl {
     position: absolute;
     background: #0e1731;
     color: #ffffff;
-    font-size: 65px;
+    font-size: 92px;
     text-transform: uppercase;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 
 .featured_second {
     position: absolute;
     background: #0e1731;
     color: #ffffff;
-    font-size: 65px;
+    font-size: 92px;
     text-transform: uppercase;
     padding: 0px 20px;
 }
@@ -472,7 +472,7 @@ footer .footer_discl {
     font-size: 150px;
     font-family: 'Righteous', cursive;
     flex-grow: 1;
-    color:#460f6b;
+    color:#d5ebfd;
     line-height: 135px;
 }
 .promotion_wrapper .promotion_animation .left span {
