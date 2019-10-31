@@ -14,7 +14,7 @@ const firebaseConfig = {
     appId: "1:754374892682:web:ae2273528c13698b482173",
    
 };
-// Initialize Firebase
+// Initialize Firebasegit 
 firebase.initializeApp(firebaseConfig);
 
 const firebaseDB = firebase.database();
@@ -22,6 +22,7 @@ const Matchesdata = firebaseDB.ref("matches");
 const firebasePromotions = firebaseDB.ref("promotions")
 const firebaseTeams = firebaseDB.ref("teams");
 const firebasePlayers = firebaseDB.ref('players');
+
 
 //network request to firebase we need to pass ref(refernec to what we need) trigger once and {then} it will return the promise
 // firebaseDB.ref("matches").once("value").then((snapshot) => {

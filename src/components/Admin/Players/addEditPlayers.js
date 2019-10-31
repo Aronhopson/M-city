@@ -124,7 +124,7 @@ class AddEditPlayer extends Component {
 
     }
 
-    //update form it grabds an element
+    //update form it grabs an element
     updateForm(element, content = '') {
         const newFormdata = { ...this.state.formdata }
         //excess the elment through the id

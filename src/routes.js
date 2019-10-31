@@ -8,6 +8,8 @@ import PublicRoutes from './components/AuthRoutes/PublicRoutes'
 import Home from './components/home'
 import SignIn from './components/SignIn'
 import TheTeam from './components/The_team'
+import TheMaches from './components/theMatches'
+import NotFound from './components/UI/Eror';
 
 import Dashboard from './components/Admin/Dashboard';
 import AdminMatche from './components/Admin/Matches';
@@ -32,10 +34,12 @@ const Routes = (props) => {
            <PrivateRoutes {...props} path="/admin_matches" exact component={AdminMatche}/>
 
            <PrivateRoutes {...props} path="/dashboard" exact component={Dashboard}/>
-
-           <PublicRoutes {...props} restricted={true}  path="/the_team" component={TheTeam} />
+           <PublicRoutes {...props} restricted={false}  path="/the_team" component={TheTeam} />
+           <PublicRoutes {...props} restricted={false}  path="/the_matches" component={TheMaches} />
            <PublicRoutes {...props} restricted={true}  path="/sign_in" component={SignIn} />
            <PublicRoutes {...props} restricted={false} path="/" component={Home} />
+           <PublicRoutes {...props} restricted={false} component={NotFound} />
+           
           
 
         </Switch>

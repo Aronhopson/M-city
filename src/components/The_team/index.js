@@ -17,6 +17,7 @@ class TheTeam extends Component {
     componentDidMount(){
         firebasePlayers.once('value').then(snapshot =>{
             const players = firebaseLooper(snapshot);
+            console.log(players)
             let promises = [];
         
             //for each player we create a new key, request the url from server and push in promise
@@ -114,3 +115,6 @@ class TheTeam extends Component {
 }
 
 export default TheTeam;
+
+
+
